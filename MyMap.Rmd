@@ -1,0 +1,39 @@
+---
+title: "Buildings of Chicago"
+author: "Kenny Ip"
+date: "January 15, 2017"
+output: ioslides_presentation
+---
+
+
+## Five Tallest Buildings
+*As of January 15, 2017*
+
+
+1. Willis Tower - 1,451 ft, 108 floors
+2. Trump International Hotel and Tower - 1,389 ft, 98 floors
+3. Aon Center - 1,136 ft, 83 floors
+4. John Hancock Center - 1,127 ft, 100 floors
+5. Franklin Center - 1,007 ft, 60 floors
+
+
+```{r, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=41.8788804, lng=-87.6381036,
+             popup="Willis Tower") %>%
+  addMarkers(lat=41.888872, lng=-87.6285827,
+             popup="Trump International Hotel and Tower") %>%
+  addMarkers(lat=41.8852868, lng=-87.6237009,
+             popup="Aon Center") %>%
+  addMarkers(lat=41.8988124, lng=-87.6252679,
+             popup="John Hancock Center") %>%
+  addMarkers(lat=41.880685, lng=-87.6363727,
+             popup="Franklin Center")
+my_map
+```
+
+
+
+
