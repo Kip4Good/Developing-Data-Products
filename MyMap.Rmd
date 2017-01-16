@@ -14,15 +14,15 @@
 library(leaflet)
 my_map <- leaflet() %>%
   addTiles() %>%
-  addMarkers(lat=41.8788804, lng=-87.6381036,
+  addMarkers(lat=41.87887, lng=-87.63600,
              popup="Willis Tower") %>%
-  addMarkers(lat=41.888872, lng=-87.6285827,
+  addMarkers(lat=41.88888, lng=-87.62645,
              popup="Trump International Hotel and Tower") %>%
-  addMarkers(lat=41.8852868, lng=-87.6237009,
+  addMarkers(lat=41.88528, lng=-87.62151,
              popup="Aon Center") %>%
-  addMarkers(lat=41.8988124, lng=-87.6252679,
+  addMarkers(lat=41.89880, lng=-87.62283,
              popup="John Hancock Center") %>%
-  addMarkers(lat=41.880685, lng=-87.6363727,
+  addMarkers(lat=41.88029, lng=-87.63474,
              popup="Franklin Center")
 my_map
 ```
