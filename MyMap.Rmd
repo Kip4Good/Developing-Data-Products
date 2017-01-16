@@ -1,12 +1,5 @@
----
-title: "Buildings of Chicago"
-author: "Kenny Ip"
-date: "January 15, 2017"
-output: ioslides_presentation
----
 
-
-## Five Tallest Buildings
+## Five Tallest Buildings in Chicago
 *As of January 15, 2017*
 
 
