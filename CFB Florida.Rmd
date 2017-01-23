@@ -1,0 +1,15 @@
+---
+title: "Plotly Week 3 Assignment"
+author: "Kenny Ip"
+date: "January 22, 2017"
+output: ioslides_presentation
+---
+
+## Florida College Football Teams
+
+```{r, echo=FALSE}
+library(plotly)
+data <- read.csv("./Florida_CFB.csv")
+plot_ly(data, x = data$Year, y = data$Wins, color = data$Team, type = 'scatter', mode = 'lines')
+```
+
