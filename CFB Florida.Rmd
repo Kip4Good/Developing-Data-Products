@@ -5,11 +5,27 @@ date: "January 22, 2017"
 output: ioslides_presentation
 ---
 
-## Florida College Football Teams
+## Best College Football Teams in State of Florida (Last 10 Years)
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE}
 library(plotly)
 data <- read.csv("./Florida_CFB.csv")
-plot_ly(data, x = data$Year, y = data$Wins, color = data$Team, type = 'scatter', mode = 'lines')
+f <- list(
+  family = "Courier New, monospace",
+  size = 18,
+  color = "#7f7f7f"
+)
+x <- list(
+  title = "Season",
+  titlefont = f
+)
+y <- list(
+  title = "Wins",
+  titlefont = f
+)
+
+cfb <- plot_ly(data, x = data$Year, y = data$Wins, color = data$Team, type = 'scatter', mode = 'lines') %>%
+  layout(xaxis = x, yaxis = y)
+cfb
 ```
 
